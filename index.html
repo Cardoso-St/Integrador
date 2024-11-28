@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Projeto Integrador - FollowUP</title>
+
+  <link rel="stylesheet" href="./style.css" />
+
+  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+</head>
+
+<body>
+
+  <!-- Header e Navbar-->
+  <header>
+    <nav>
+      <div class="nav_logo">
+        <a href="#">
+          <h2 style="color: #164194;">FollowUP</h2>
+        </a>
+      </div>
+
+      <input type="checkbox" id="click" />
+      <label for="click">
+        <i class="menu_btn bx bx-menu"></i>
+        <i class="close_btn bx bx-x"></i>
+      </label>
+
+      <ul>
+        <li><a href="#Inicio">Inicio</a></li>
+        <li><a href="#Sobre">Sobre</a></li>
+        <li><a href="#service">Serviços</a></li>
+        <li><a href="#beneficios">Porque nós</a></li>
+        <li><a href="http://127.0.0.1:3002/index.html">Para professores</a></li>
+
+
+      </ul>
+    </nav>
+  </header>
+  <div id="progresso">
+    <a href="#Inicio" id="value-progresso">
+      <span> &#x1F815
+      </span>
+    </a>
+
+  </div>
+  <!-- Login FOrm -->
+  <div class="blur-background">
+  </div>
+  <div class="login-form">
+    <span class="fechar-btn material-icons">close</span>
+    <div class="form-box login">
+      <div class="form-detalhes">
+        <h2>
+          Sejam bem-vindo
+        </h2>
+        <p>Serviço que permite aos pais monitorarem o comportamento dos alunos em sala de aula, com acesso detalhado a
+          relatórios enviados pelos professores.</p>
+      </div>
+      <div class="form-content">
+        <h2>
+          Login
+        </h2>
+        <form action="#">
+          <div class="input-entrada">
+            <input type="text" required>
+            <label>Email</label>
+          </div>
+          <div class="input-entrada">
+            <input type="password" required>
+            <label>Passoword</label>
+          </div>
+          <a href="#" class="esquecer-senha">Esquecer senha</a>
+          <button class="coloo" type="button" onclick="window.location.href='adminpanel2-master/index.html';">
+            Login
+          </button>
+        </form>
+        <div class="bottom-link">
+          Ainda não é nosso cliente?!
+          <br>
+          <a href="#" id="signup-link">Registre-se</a>
+        </div>
+      </div>
+    </div>
+    <div class="form-box registrar">
+      <div class="form-detalhes">
+        <h2>
+          Criar sua conta
+        </h2>
+        <p>Serviço que permite aos pais monitorarem o comportamento dos alunos em sala de aula, com acesso detalhado a
+          relatórios enviados pelos professores.</p>
+      </div>
+      <div class="form-content">
+        <h2>
+          Criar conta
+        </h2>
+        <form action="#">
+          <div class="input-entrada">
+            <input type="text" required>
+            <label>Digite seu email</label>
+          </div>
+          <div class="input-entrada">
+            <input type="password" required>
+            <label>Crie sua senha</label>
+          </div>
+          <div class="politica-texto">
+            <input type="checkbox">
+            <label for="politica">
+              Aceita todos os <a href="">termos & condinções</a>
+            </label>
+          </div>
+          <button class="coloo" type="button" onclick="window.location.href='adminpanel2-master/index.html';">Criar conta</button>
+        </form>
+        <div class="bottom-link">
+          Já possui uma conta?
+          <br>
+          <a href="#" id="login-link">Login</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- inicio Section -->
+  <section class="inicio_section" id="Inicio">
+    <div class="section_container">
+      <div class="inicio_container">
+        <div class="text_section">
+          <h2>FollowUP</h2>
+          <h3>Melhorando a comunicação entre professor e responsável</h3>
+          <p>
+            Follow-Up é um aplicativo voltado para pais e responsáveis por alunos de rede pública e privada, com o
+            intuito de retificar os ruídos encontrados na interação do responsável com o regime escolar em relação ao
+            comportamento, às atividades realizadas e às notas do estudante.
+          </p>
+
+          <div class="inicio_section_button">
+            <button class="button" id="buttonlogin">Entrar</button>
+            <button class="button" id="buttonRegistrar">Cadastrar</button>
+          </div>
+        </div>
+
+        <div class="image_section">
+
+          <img src="images/cuidado.png" alt="" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Sobre -->
+  <section class="sobre" id="Sobre">
+    <div class="section_container">
+      <div class="sobre_container">
+        <div class="text_section">
+          <h2 class="section_title">Sobre</h2>
+          <p>
+            Follow-up é um aplicativo acadêmico que busca auxiliar os pais e responsáveis por estudantes, sejam eles de
+            escolas da rede pública ou privada do Ensino Fundamental I, Ensino Fundamental II e Ensino Médio. A
+            instituição de ensino inserida pelo estudante ofereceráo aplicativo Follow-Up para os responsáveis buscandoa
+            praticidade na atenção no trabalhode cuidado dos pais com seus filhos.
+          </p>
+        </div>
+
+        <div class="image_section">
+
+          <img src="images/do-utilizador.png" alt="" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services -->
+  <section class="services" id="service">
+    <h2 class="section_title">Nossos serviços</h2>
+    <div class="section_container">
+      <div class="service_container">
+        <div class="services_items">
+          <img src="images/comente.png" alt=""" />
+            <div class=" services_text">
+          <h3>Acompanhamento de Comportamento: </h3>
+          <p>
+            Serviço que permite aos pais monitorarem o comportamento dos alunos em sala de aula, com acesso detalhado a
+            relatórios enviados pelos professores.
+          </p>
+        </div>
+      </div>
+      <div class="services_items">
+        <img src="images/do-utilizador.png" alt="" />
+        <div class="services_text">
+          <h3>Área de Perfil Personalizado para Responsáveis:</h3>
+          <p>
+            Cada responsável tem acesso a um perfil exclusivo onde pode gerenciar informações dos filhos, consultar
+            histórico de interações e ajustar preferências de notificações.
+          </p>
+        </div>
+      </div>
+      <div class="services_items">
+        <img src="images/sino.png" alt="" />
+        <div class="services_text">
+          <h3>Notificações e Alertas Personalizados: </h3>
+          <p>Envio de notificações automáticas sobre eventos, reuniões de pais e mestres, tarefas pendentes e outras
+            atualizações importantes, garantindo que os responsáveis estejam sempre informados.</p>
+        </div>
+      </div>
+      <div class="services_items">
+        <img src="images/atuacao.png" alt="" />
+        <div class="services_text">
+          <h3>Consulta de Notas e Desempenho Acadêmico</h3>
+          <p>
+            Visualização do boletim com notas bimestrais, trimestrais e anuais, ajudando os pais a acompanhar o
+            progresso e o rendimento escolar dos estudantes em tempo real.
+
+          </p>
+        </div>
+      </div>
+      <div class="services_items">
+        <img src="images/cuidado.png" alt="s" />
+        <div class="services_text">
+          <h3>Melhoria na Participação dos Pais:</h3>
+          <p>Facilita o engajamento dos responsáveis no processo educacional, promovendo uma colaboração mais estreita
+            com a escola para o sucesso dos alunos.</p>
+        </div>
+      </div>
+      <div class="services_items">
+        <img src="images/lista.png" alt="Desserts" />
+        <div class="services_text">
+          <h3>Relatórios de Atividades Realizadas:</h3>
+          <p>
+            Página dedicada para que os responsáveis possam ver as atividades e tarefas concluídas pelos alunos,
+            promovendo um acompanhamento mais próximo do aprendizado.
+          </p>
+        </div>
+      </div>
+    </div>
+    </div>
+  </section>
+
+  <!-- beneficios -->
+  <section class="beneficios" id="beneficios">
+    <h2 class="section_title">Por que escolher a gente?</h2>
+    <div class="section_container">
+      <div class="beneficios_container">
+        <div class="beneficios_items">
+          <img src="images/protecao.png" alt="" />
+          <div class="beneficios_text">
+            <h3>Segurança Garantida:</h3>
+            <p>
+              Proteção total das informações, garantindo a privacidade dos dados de alunos e responsáveis. Mais
+              segurança e tranquilidade para todos.
+            </p>
+          </div>
+        </div>
+        <div class="beneficios_items">
+          <img src="images/trabalho-em-rede.png" alt="" />
+          <div class="beneficios_text">
+            <h3>Inovação Tecnológica:</h3>
+            <p>
+              Escolas na vanguarda, utilizando tecnologia de ponta para fortalecer a comunicação e o vínculo com os
+              responsáveis.
+            </p>
+          </div>
+        </div>
+        <div class="beneficios_items">
+          <img src="images/estoque-pronto.png" alt="" />
+          <div class="beneficios_text">
+            <h3>Acessibilidade Simples</h3>
+            <p>
+              Design intuitivo que todos podem usar facilmente, mesmo quem não é familiar com tecnologia. Acompanhe a
+              vida escolar de forma prática e direta.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Avaliações -->
+  <section class="gallery" id="gallery">
+    <h2 class="section_title">O que os clientes dizem ?</h2>
+    <div class="section_container">
+      <div class="gallery_container">
+        <div class="gallery_items">
+          Comentário de satisfação com o serviço: "Adorei a experiência com a Followp! O atendimento é rápido e
+          eficiente, e as soluções que oferecem são realmente inovadoras. A plataforma é fácil de usar e fez toda a
+          diferença na minha rotina. Super recomendo!"
+        </div>
+        <div class="gallery_items">
+          Comentário destacando a qualidade e confiança: "A Followp se destacou pelo profissionalismo e pela qualidade
+          dos serviços. Desde o primeiro contato, fiquei impressionado com o comprometimento da equipe em entender as
+          necessidades do cliente. Já sou cliente há alguns meses e não me arrependo nem um pouco."
+        </div>
+        <div class="gallery_items">
+          Comentário sobre o impacto positivo no negócio: "Graças à Followp, minha empresa conseguiu melhorar muito
+          nossa gestão de processos. A solução é intuitiva e muito eficaz, ajudando a otimizar o tempo e aumentar a
+          produtividade. Sem dúvida, foi um grande investimento para o nosso crescimento."
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Contato -->
+  <section class="contact" id="contact">
+    <h2 class="section_title">Envie uma mensagem para gente!</h2>
+    <div class="section_container">
+      <div class="contact_container">
+        <div class="contact_form">
+          <form action="#">
+            <div class="field">
+              <label for="Name">Nome</label>
+              <input type="text" id="Name" placeholder="Digite seu nome" required />
+            </div>
+            <div class="field">
+              <label for="email">Email</label>
+              <input type="text" id="email" placeholder="Digite seu email" required />
+            </div>
+            <div class="field">
+              <label for="number">Numero</label>
+              <input type="number" id="number" placeholder="Digite seu numero" required />
+            </div>
+            <div class="field">
+              <label for="textarea">Envie uma mensagem...</label>
+              <textarea name="textarea" id="textarea" placeholder="Envie uma mensagem para gente"></textarea>
+            </div>
+
+            <button class="button" id="submit">Enviar</button>
+          </form>
+        </div>
+
+        <div class="contact_text">
+          <div class="contact_items">
+            <i class="bx bx-current-location"></i>
+            <div class="contact_details">
+              <h3>Nossa localização</h3>
+              <p>Maceio, Alagoas</p>
+            </div>
+          </div>
+          <div class="contact_items">
+            <i class="bx bxs-envelope"></i>
+            <div class="contact_details">
+              <h3>Email para contato</h3>
+              <p>FollowUP@gmail.com</p>
+            </div>
+          </div>
+          <div class="contact_items">
+            <i class="bx bxs-phone-call"></i>
+            <div class="contact_details">
+              <h3>Numero para contato</h3>
+              <p>+55(82)92728239</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer Section -->
+  <footer>
+    <div class="section_container">
+      <div class="footer_section">
+        <div class="footer_logo">
+          <a href="index.html">
+            <!-- LOGO <img src="" alt="LOGO" />
+              <h2>LOGO</h2> -->
+          </a>
+        </div>
+
+        <div class="nossos_links">
+          <h3>Nossos links</h3>
+          <ul>
+            <li><a href="#Sobre">Sobre</a></li>
+            <li><a href="#service">Serviços</a></li>
+            <li><a href="#beneficios">Beneficios</a></li>
+            <li><a href="#gallery">Avaliações</a></li>
+            <li><a href="#contact">Contato</a></li>
+          </ul>
+        </div>
+
+        <div class="contact_us">
+          <h3>Onde encontrar a gente?</h3>
+          <ul>
+            <li>
+              <i class="bx bx-current-location"></i>
+              <span>Maceio, alagoas</span>
+            </li>
+            <li>
+              <i class="bx bxs-phone-call"></i> <span>+55(82)92728239</span>
+            </li>
+
+          </ul>
+        </div>
+
+        <div class="follow_us">
+          <h3>Midias sociais</h3>
+          <i class="bx bxl-facebook-circle"></i>
+          <i class='bx bxl-github'></i>
+          <i class="bx bxl-instagram-alt"></i>
+          <i class='bx bxl-youtube'></i>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script src="script.js"></script>
+</body>
+
+</html>
